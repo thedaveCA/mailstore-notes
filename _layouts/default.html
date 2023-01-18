@@ -56,9 +56,11 @@
       <section>
         <hr>
         {% if page.id %}
+        {% if post.tags == empty or post.tags == nil %}
         <div id="title">
           <span class="credits left">Tags: {{ page.tags | array_to_sentence_string }}</span>
       </div>
+      {% endif %}
       {% endif %}
     </section>
   </div>

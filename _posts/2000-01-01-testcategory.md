@@ -1,6 +1,6 @@
 ---
 title: cat
-categories: meow
+categories: MailStoreServer
 ---
 
 Cat here
