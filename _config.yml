@@ -1,0 +1,27 @@
+title: mailstore-notes.pages.dev
+description: A bit about MailStore
+permalink: /:categories/:title/ # date/pretty/ordinal/weekdate/none https://jekyllrb.com/docs/permalinks/
+show_downloads: false
+repository: thedaveCA/mailstore-notes
+google_analytics:
+# baseurl: /
+future: false # Render posts from the future?
+timezone: America/Edmonton
+remote_theme: pages-themes/midnight@v0.2.0
+#remote_theme: pages-themes/hacker@v0.2.0
+plugins:
+#- jekyll-remote-theme # add this line to the plugins list if you already have one
+#- jekyll-redirect-from # Give your Jekyll posts and pages multiple URLs
+#- jekyll-titles-from-headings # default title from the first Markdown heading
+- jekyll-relative-links # [foo](bar.md)
+#- jekyll-sitemap # /sitemap.xml
+#- jekyll-feed # Generate an Atom feed at /feed
+
+relative_links:
+  enabled:     true
+  collections: false
+
+feed:
+  path: /feed
+  posts_limit: 20
+  excerpt_only: false
