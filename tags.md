@@ -18,3 +18,13 @@ toplink: left
 {% endfor %}
 </ul>
 {% endfor %}
+
+untagged
+<ul>
+{% for post in posts %}
+  {% if post.tags != empty %}
+  <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endif %}
+{% endfor %}
+</ul>
+{% endfor %}
