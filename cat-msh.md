@@ -29,7 +29,7 @@ toplink: left
 <ul>
 {% for post in posts %}
   {% if post.tags contains t %}
-  {% if post.categories contains 'mailstorehome' %}
+  {% if post.categories contains 'MailStoreHome' %}
   <li><a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endif %}
   {% endif %}
