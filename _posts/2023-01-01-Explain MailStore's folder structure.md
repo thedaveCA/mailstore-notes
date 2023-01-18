@@ -1,7 +1,7 @@
 ---
-title: Explain MailStore's folder structure-e109ed00
+title: Explain MailStore's folder structure
 categories: MailStoreServer MailStoreSPE MailStoreHome
-tags: 
+tags: information
 published: true
 --- 
 All messages in MailStore are within an individual user's archive, each user has a separate archive, so for example my incoming messages could end up in any/all of these depending on where the messages come from: 

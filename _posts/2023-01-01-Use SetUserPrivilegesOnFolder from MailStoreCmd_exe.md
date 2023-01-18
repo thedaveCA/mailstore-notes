@@ -1,5 +1,5 @@
 ---
-title: Use SetUserPrivilegesOnFolder from MailStoreCmd_exe-656b33ac
+title: Use SetUserPrivilegesOnFolder from MailStoreCmd.exe
 categories: MailStoreServer MailStoreSPE
 tags: scripting MailStoreCmd
 published: true
