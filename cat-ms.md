@@ -10,8 +10,6 @@ toplink: left
  {% if post.categories contains 'MailStoreServer' %}
       <li><a href="{{ post.url }}">{{ post.title }}</a></li>
       {% if post.tags != empty %}
-      <h6></h6>
-      {% else %}
       <h6>Tags: {{ post.tags | array_to_sentence_string }}</h6>
       {% endif %}
   {% endif %}
