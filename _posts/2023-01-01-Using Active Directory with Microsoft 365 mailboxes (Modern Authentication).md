@@ -1,5 +1,5 @@
 ---
-title: Using Active Directory with Microsoft 365 mailboxes (Modern Authentication)
+title: Active Directory with Microsoft 365 Modern Authentication
 categories: MailStoreServer MailStoreSPE
 tags: M365
 published: true

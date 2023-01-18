@@ -2,7 +2,7 @@
 title: ANOTHER misc-Directory Services, converting to M365 attempt
 categories: MailStoreServer MailStoreSPE
 tags: M365
-published: true
+published: false
 --- 
 # Microsoft 365 / Hybrid environments
 
