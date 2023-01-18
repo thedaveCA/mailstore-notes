@@ -9,7 +9,7 @@ toplink: left
 {% for post in site.posts %}
  {% if post.categories contains 'MailStoreHome' %}
       <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-      {% if post.tags.count == 0 %}
+      {% if post.tags != empty %}
       <h6></h6>
       {% else %}
       <h6>Tags: {{ post.tags | array_to_sentence_string }} </h6>
