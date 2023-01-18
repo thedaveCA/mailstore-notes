@@ -23,7 +23,7 @@ toplink: left
 untagged
 <ul>
 {% for post in posts %}
-  {% if post.tags == empty %}
+  {% if post.tags == empty or post.tags == nil %}
   <li><a href="{{ post.url }}">{{ post.title }}</a></li>
   {% if post.categories != empty %}<h6>Applies to: {{ post.categories | array_to_sentence_string }}</h6>{% endif %}
   {% endif %}
