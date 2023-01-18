@@ -1,5 +1,5 @@
 ---
-title: Extracting unknown e-mail addresses from journal-type profile's debug log via Linux_WSL-47154077
+title: Extracting unknown e-mail addresses from journal-type profile's debug log via Linux_WSL
 categories: MailStoreServer MailStoreSPE
 tags: ServerUnmappableException importing
 published: true

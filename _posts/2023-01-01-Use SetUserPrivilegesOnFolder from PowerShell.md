@@ -1,5 +1,5 @@
 ---
-title: Use SetUserPrivilegesOnFolder from PowerShell-ce544439
+title: Use SetUserPrivilegesOnFolder from PowerShell
 categories: MailStoreServer
 tags: scripting API PowerShell
 published: true

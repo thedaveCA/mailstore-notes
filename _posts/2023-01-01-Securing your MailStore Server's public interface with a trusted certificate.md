@@ -1,5 +1,5 @@
 ---
-title: Securing your MailStore Server's public interface with a trusted certificate-5a90ddf4
+title: Securing your MailStore Server's public interface with a trusted certificate
 categories: MailStoreServer
 tags: 
 published: false
