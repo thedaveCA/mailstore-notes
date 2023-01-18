@@ -27,4 +27,3 @@ untagged
   {% endif %}
 {% endfor %}
 </ul>
-{% endfor %}
