@@ -1,6 +1,6 @@
 ---
 title: ANOTHER misc-Directory Services, converting to M365 attempt-b90990e1
-categories: 
+categories: MailStoreServer MailStoreSPE
 tags: M365
 published: false
 --- 

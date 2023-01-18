@@ -1,8 +1,8 @@
 ---
 title: Microsoft 365 Hybrid - Active Directory + Microsoft 365 Mailbox archiving-060d2bee
-categories: 
+categories: MailStoreServer MailStoreSPE
 tags: M365
-published: false
+published: true
 --- 
 This article is intended to cover situations where you intend to leave Directory Services set to Active Directory, and archive mailboxes either from Microsoft 365, or a combination/hybrid of Microsoft 365, on-premises Exchange, or other platforms. 
 

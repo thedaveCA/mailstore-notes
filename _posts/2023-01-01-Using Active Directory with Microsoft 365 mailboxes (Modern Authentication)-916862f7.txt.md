@@ -1,8 +1,8 @@
 ---
 title: Using Active Directory with Microsoft 365 mailboxes (Modern Authentication)-916862f7
-categories: 
-tags: 
-published: false
+categories: MailStoreServer MailStoreSPE
+tags: M365
+published: true
 --- 
 # MailStore's article about this
 https://help.mailstore.com/en/server/Archiving_Emails_from_Microsoft_365_Hybrid

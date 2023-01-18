@@ -1,7 +1,7 @@
 ---
 title: Getting started with MailStore SPE's Management API-4fe7beb8
-categories: 
-tags: scripting MailStoreSPE API
+categories: MailStoreSPE
+tags: scripting API
 published: true
 --- 
 # Enable the API

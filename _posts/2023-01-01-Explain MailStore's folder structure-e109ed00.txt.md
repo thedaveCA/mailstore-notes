@@ -1,6 +1,6 @@
 ---
 title: Explain MailStore's folder structure-e109ed00
-categories: information
+categories: MailStoreServer MailStoreSPE MailStoreHome
 tags: 
 published: true
 --- 

@@ -1,7 +1,7 @@
 ---
 title: Use SetUserPrivilegesOnFolder from MailStoreCmd_exe-656b33ac
-categories: 
-tags: scripting MailStoreServer MailStoreCmd
+categories: MailStoreServer MailStoreSPE
+tags: scripting MailStoreCmd
 published: true
 --- 
 To use *MailStoreCmd.exe* we need to know a bit about the environment, but we can use MailStore Client to generate a working command line for us:

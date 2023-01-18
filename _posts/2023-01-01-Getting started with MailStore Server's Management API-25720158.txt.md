@@ -1,7 +1,7 @@
 ---
 title: Getting started with MailStore Server's Management API-25720158
-categories: 
-tags: scripting MailStoreServer API
+categories: MailStoreServer
+tags: scripting API
 published: true
 --- 
 # Enable the API

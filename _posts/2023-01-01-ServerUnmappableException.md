@@ -1,7 +1,7 @@
 ---
 title: Extracting unknown e-mail addresses from journal-type profile's debug log
-categories: tips
-tags: 
+categories: MailStoreServer MailStoreSPE
+tags: ServerUnmappableException importing
 published: true
 permalink: ServerUnmappableException
 --- 

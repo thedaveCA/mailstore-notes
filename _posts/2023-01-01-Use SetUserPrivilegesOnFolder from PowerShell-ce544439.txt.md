@@ -1,8 +1,8 @@
 ---
 title: Use SetUserPrivilegesOnFolder from PowerShell-ce544439
-categories: 
-tags: 
-published: false
+categories: MailStoreServer
+tags: scripting API PowerShell
+published: true
 --- 
 First please refer to the [MailStore PowerShell API Wrapper](https://help.mailstore.com/en/server/PowerShell_API_Wrapper_Tutorial) article for instructions on the system requirements and basics of the PowerShell wrapper.
 

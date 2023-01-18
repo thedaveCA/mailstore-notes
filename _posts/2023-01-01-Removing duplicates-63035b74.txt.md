@@ -1,7 +1,7 @@
 ---
 title: Removing duplicates-63035b74
-categories: tips
-tags: 
+categories: MailStoreServer MailStoreSPE MailStoreHome
+tags: tricks
 published: true
 --- 
 # Introduction
