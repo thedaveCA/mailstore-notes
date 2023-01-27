@@ -5,4 +5,4 @@ published: true
 
 # Contact
 
-Contact via GitHub
+Contact via GitHub, please and thanks.
