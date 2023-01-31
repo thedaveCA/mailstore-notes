@@ -1,7 +1,7 @@
 ---
 permalink: /tags/
 title: Tags
-toplink: left
+toplink: right
 ---
 
 {% assign sorted_tags = site.tags | sort %}
