@@ -4,9 +4,9 @@ categories: MailStoreServer
 tags: scripting API
 published: true
 --- 
-# Enable the API
+## Enable the API
 
-The API might already be enabled, but let's check that it is enabled before proceeding: 
+The API might already be enabled, but let's check that it is enabled before proceeding:
 
 1. Launch the *MailStore Server Service Configuration Configuration* tool.
 
@@ -16,7 +16,7 @@ The API might already be enabled, but let's check that it is enabled before proc
 
 4. Click *Restart Service* if you made any changes.
 
-# Call the HTTPS API directly
+## Call the HTTPS API directly
 
 ## Install a browser extension
 
@@ -26,25 +26,25 @@ For reference my server's API is available <https://exchangedc.example.com:8463>
 
 ## Trust the certificate
 
-1.  First access the URI and allow the untrusted certificate (if needed)
+1. First access the URI and allow the untrusted certificate (if needed)
 
-2.  Do this by visiting the web interface at <https://exchangedc.example.com:8462>
+2. Do this by visiting the web interface at <https://exchangedc.example.com:8462>
 
-3.  Advanced -> Accept the certificate
+3. Advanced -> Accept the certificate
 
-4.  Close the tab when prompted for credentials.
+4. Close the tab when prompted for credentials.
 
 ## Make a first call to the API
 
-1.  Now launch RESTClient
+1. Now launch RESTClient
 
-2.  Click the Authentication tab
+2. Click the Authentication tab
 
-3.  Set the admin username/password.
+3. Set the admin username/password.
 
-4.  Change the **Method** to *Post*
+4. Change the **Method** to *Post*
 
-5.  Call `https://exchangedc.example.com:8463/api/invoke/GetUsers` (without the quotes)
+5. Call `https://exchangedc.example.com:8463/api/invoke/GetUsers` (without the quotes)
 
 My response looks like this:
 
@@ -72,14 +72,14 @@ My response looks like this:
 
 ## Add parameters to apply a filter
 
-Now change the URI to `https://exchangedc.example.com:8463/api/invoke/GetUserInfo`. If you were to submit now you'd get a response that start like this: 
+Now change the URI to `https://exchangedc.example.com:8463/api/invoke/GetUserInfo`. If you were to submit now you'd get a response that start like this:
 
     {
       "error": {
         "message": "Missing API argument userName.",
         "details": "System.Exception: Missing API argument userName.\r\n   at 
 
-Add the body `userName=frank.clark` and we get a good response again: 
+Add the body `userName=frank.clark` and we get a good response again:
 
     {
       "error": null,

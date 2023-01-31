@@ -4,13 +4,13 @@ categories: MailStoreServer MailStoreSPE
 tags: M365
 published: true
 --- 
-# Microsoft 365 / Hybrid environments
+## Microsoft 365 / Hybrid environments
 
 Hybrid environments are complicated, and there is no one-size-fits-all solution. MailStore is more flexible than is immediately obvious but there are a few things to understand.
 
 ## MailStore's article abouy Microsoft 365 / Active Directory hybrid environments
 
-https://help.mailstore.com/en/server/Archiving_Emails_from_Microsoft_365_Hybrid
+[https://help.mailstore.com/en/server/Archiving_Emails_from_Microsoft_365_Hybrid](https://help.mailstore.com/en/server/Archiving_Emails_from_Microsoft_365_Hybrid)
 
 ## Further details
 
@@ -34,5 +34,6 @@ Start at *step 2.1*, register the app, create credentials and then publish the c
 
 We skip steps *2.4* and *2.5* as they only apply to synchronizing users with Microsoft 365, but we are intending to stay with Active Directory, but the API permissions are still needed so be sure that you completed step 2.6.
 
-Now that the credentials have been created you can set up Microsoft 365 archiving profiles. For information refer to the [Archiving Emails from Microsoft 365 (Modern Authentication)](https://help.mailstore.com/en/server/Archiving_Emails_from_Microsoft_365_(Modern_Authentication)) article to set up archiving as normal. 
+Now that the credentials have been created you can set up Microsoft 365 archiving profiles. For information refer to the [Archiving Emails from Microsoft 365 (Modern Authentication)](https://help.mailstore.com/en/server/Archiving_Emails_from_Microsoft_365_(Modern_Authentication)) article to set up archiving as normal.
+
 The principles are the same as your existing "Exchange" profiles, so you can probably skip directly to the section that covers [Archiving Multiple Microsoft 365 Mailboxes Centrally](https://help.mailstore.com/en/server/Archiving_Emails_from_Microsoft_365_(Modern_Authentication)#Archiving_Multiple_Microsoft_365_Mailboxes_Centrally).
