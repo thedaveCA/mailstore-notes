@@ -3,11 +3,12 @@ title: Extracting unknown e-mail addresses from journal-type profile's debug log
 categories: MailStoreServer MailStoreSPE
 tags: ServerUnmappableException importing
 published: true
-permalink: ServerUnmappableException
+permalink: MailStoreServer/ServerUnmappableException
 --- 
-# Bulk import of messages without a list of all known e-mail addresses
 
-## Preface
+## Bulk import of messages without a list of all known e-mail addresses
+
+### Preface
 
 This article describes how to perform a one-time archive or migration of messages into MailStore where the messages are available in EML files, PST files, an Exchange journal mailbox or a Multidrop mailbox and there is no definitive list of users / e-mail addresses available.
 
@@ -15,11 +16,11 @@ All steps are to be performed in MailStore Client, logged in as an admin, unless
 
 I will be using `example.com` as the domain for my company in this article.
 
-## Licensing
+### Licensing
 
 You will need a user license for each user for the archiving process. MailStore's 30-day trial has a 500-user limit and can be used for the initial archiving, or you could import users in batches instead.
 
-## Creating the initial users (optional)
+### Creating the initial users (optional)
 
 To start off with, if you will eventually be using Directory Services to synchronize users then you can set it up first. This step is optional, and Directory Services is not actually needed at all, but by first synchronizing users it will reduce the number of users that need to be manually created.
 
@@ -27,11 +28,11 @@ I'll be using the full e-mail address in this article but if your Directory Serv
 
 If you aren't using Directory Services or simply are not ready to synchronize users, you just need at least one user with an e-mail address attached to their account. You could edit the admin account and set `admin@example.com` for the address.
 
-## Archiving Profile
+### Archiving Profile
 
 You can archive from EML files, PST files of type *Multiple Users* or *Exchange Journal*, or *Multidrop* accounts, the process is similar for all message sources.
 
-### EML files
+#### EML files
 
 - Go to *Archive E-mail*.
 - Create a new profile --> *E-mail Files* --> *Multiple Users*.
@@ -40,13 +41,13 @@ You can archive from EML files, PST files of type *Multiple Users* or *Exchange 
 - Leave "Delete them in origin mailbox" unchecked.
 - Run the archiving profile.
 
-### Running the archiving profile for the first time
+#### Running the archiving profile for the first time
 
 You can start with a subdirectory that contains a few messages to understand the process, and later run the profile again against the same messages without duplicating any messages in the archive. Depending on the amount of mail you have to import, it may take several hours to perform the initial archiving run which generates the list we will use going forward.
 
 Any user that already exists in MailStore at this point will have their messages archived, while messages that do not belong to any known user will have a debug log entry created, providing us a list of needed users.
 
-## Get the debug log
+### Get the debug log
 
 - Click *Details*.
 - You should see a number of messages that are skipped with the message `because the target user archive could not be determined based on the e-mail addresses`.
@@ -60,7 +61,7 @@ You may want to open the log to take a look, in which case look for the lines th
 
 `noreply@mailstore.com` is an example of an external address, while the`@example.com` addresses belong to our example company in this documentation. Note that there may be any number of addresses, but most messages will just have two.
 
-## Get the e-mail addresses out of the debug log
+### Get the e-mail addresses out of the debug log
 
 We need to get the e-mail addresses from the debug log lines above into a list, one e-mail address per line, with all other punctuation and spaces removed. Duplicates will not cause errors, but will take time to process, so it is ideal to remove them from the list but it is not required.
 
@@ -87,15 +88,15 @@ Note that the original list had external addresses like `noreply@mailstore.com` 
 
 If you built the *userlist.txt* file manually, move ahead to **Create the users**, otherwise read on for automated ways of creating the list.
 
-### Linux / bash command line
+#### Linux / bash command line
 
-The Linux/WSL steps are [located in a separate article](ServerUnmappableException-wsl.md) and will only take a couple of minutes to complete.
+The Linux/WSL steps are [located in a separate article](/MailStoreServer/ServerUnmappableException/linux_wsl/) and will only take a couple of minutes to complete.
 
-### Manually (via Excel)
+#### Manually (via Excel)
 
-The Excel steps are [located in a separate article](ServerUnmappableException-excel.md) and only needed if you do not have access to a Linux console for a few minutes.
+The Excel steps are [located in a separate article](/MailStoreServer/ServerUnmappableException/excel/) and only needed if you do not have access to a Linux console for a few minutes.
 
-## Create the users
+### Create the users
 
 - Return to *MailStore Client*.
 - Right click on the profile created earlier and select *Create Scheduled Task*.
@@ -126,7 +127,7 @@ A note about using bare usernames (without the `@example.com` domain portion): Y
 
 Creating totally different usernames and e-mail addresses (e.g. `fclark` and `frank.clark@example.com`) or listing multiple e-mail addresses is out of scope for this article, but you could modify the command lines above to match your environment.
 
-## Running the archive profile
+### Running the archive profile
 
 Once your users are created, return to the *Archive E-mail* panel and run your `Multidrop Mailbox (File System)` profile again, this time it should process all messages.
 
@@ -134,7 +135,7 @@ Click the *Details* link again to review the results. If there are any messages 
 
 It is likely that you will have *new messages* archived and some *messages already existed in the archive*, but you should not have any further *messages have been skipped*.
 
-## Cleanup unneeded users
+### Cleanup unneeded users
 
 At this point all of your source message files have been archived, and these files are no longer needed by MailStore.
 
@@ -150,11 +151,11 @@ Instead you could also use MailStore Client's *Users* list. In this case, select
 
 If any users were created by Directory Services and deleted above they will be recreated by Directory Services again, with their default set of permissions.
 
-## Final notes
+### Final notes
 
 A few more bits of information about the process that did not fit neatly above.
 
-## Creating a user that has permissions to access the entire archive
+### Creating a user that has permissions to access the entire archive
 
 You will likely now need to create one or more users that have access to the entire archive. From the users editor you can give a user the ability to read a specific archive, but this would take a lot of clicking to give a single user access to many archives.
 
@@ -162,19 +163,19 @@ Instead you can create an *Auditor* user that has read access to all archives wi
 
 You can create multiple auditor users if desired and once they're created you can rename them to the user's normal account name. If the target user already exists from Directory Services, delete their old account and rename the auditor user, then change their *Authentication Type* to `Directory Services`. Directory Services will update the full name and e-mail address the next time it synchronizes.
 
-### User Interface
+#### User Interface
 
 In the *Progress View* dialog when you click the *Details* link, the dialog blocks you from accessing MailStore Client's interface until it is closed. I would therefore commend opening the debug log via Windows Explorer, copy the file, and return to MailStore Client to close this dialog otherwise it appears that MailStore Client is hung if you try to access other dialogs.
 
 The debug log is only preserved while you leave *Progress View* open, if the *Debug Log* button is missing you are probably looking at Recent Results which does not contain the needed information.
 
-### Archiving
+#### Archiving
 
 MailStore's archiving profiles all skip messages already in the target archive/folder, therefore there is no need to remove messages in the archive if you repeat the process after creating new users or adding more EML files.
 
 If you change the folder names in the archiving profiles, this *will* cause duplicates to be created. I would recommend using the defaults, or at least, be sure to get it right.
 
-### Do not delete messages from the source until you're done
+#### Do not delete messages from the source until you're done
 
 While it might seem like you could save some time by having MailStore delete the source messages during each archiving profile execution so that you do not need to re-scan all messages that have already been archived, this is not recommended as it has an unexpected consequence.
 
