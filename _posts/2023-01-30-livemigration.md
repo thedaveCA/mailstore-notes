@@ -3,9 +3,8 @@ title: Migrating a "live" MailStore Server
 categories: MailStoreServer
 tags: importing tips
 published: true
+permalink: mailstoreserver/livemigration/
 ---
-
-## Migrating a "live" MailStore Server
 
 If you are moving MailStore to a server in another office, a cloud-hosted virtual machine or leased server, or have a substantial amount of data then it can take a significant amount of time to move MailStore's database to another server.
 
@@ -48,4 +47,4 @@ You can do this in multiple ways, I'll cover robocopy and rclone, but any file c
 
 The important part is that you do not block MailStore from accessing the database files, and avoid copying files that are still changing. In particular, do not copy or touch the `.FDB` files while MailStore is running.
 
-Follow either the [robocopy instructions](/livemigration-robocopy) or the [rclone instructions](/livemigration-rclone).
+Follow either the [robocopy instructions](/mailstoreserver/livemigration/robocopy/) or the [rclone instructions](/mailstoreserver/livemigration/rclone/).

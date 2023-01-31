@@ -3,10 +3,10 @@ title: Migrating a "live" MailStore Server using robocopy
 categories: MailStoreServer
 tags: importing tips
 published: true
-permalink: livemigration-robocopy
+permalink: mailstoreserver/livemigration/robocopy/
 ---
 
-Be sure to first read the [Migrating a "live" MailStore Server](livemigration) article first. Also available is [rclone instructions](livemigration-rclone).
+Be sure to first read the [Migrating a "live" MailStore Server](/mailstoreserver/livemigration/) article first. Also available is [rclone instructions](/mailstoreserver/livemigration/rclone/).
 
 ### Pre-staging the data
 

@@ -3,8 +3,10 @@ title: Extracting unknown e-mail addresses from journal-type profile's debug log
 categories: HelperArticles
 tags: ServerUnmappableException importing
 published: true
-permalink: ServerUnmappableException-excel
+permalink: MailStoreServer/ServerUnmappableException/excel
 --- 
+## Preface
+
 This is part of a larger set of steps to set up a fresh MailStore Server and migrate messages from another archiving platform where the list of older users is not known.
 
 This article just covers the steps to use Excel and the Windows Command Line to get the e-mail addresses, [the full process is described here](ServerUnmappableException.md).
