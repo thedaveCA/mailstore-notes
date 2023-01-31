@@ -1,6 +1,6 @@
 ---
 permalink: /mailstoreserver/
-title: MailStore Server
+title: Server
 toplink: left
 ---
 <h2>MailStore Server</h2>

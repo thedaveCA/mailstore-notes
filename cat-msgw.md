@@ -1,13 +1,13 @@
 ---
-permalink: /mailstorespe/
-title: SPE
+permalink: /mailstoregateway/
+title: Gateway
 toplink: left
 ---
 <h2>MailStore SPE</h2>
 <h3>All articles</h3>
 <ul>
 {% for post in site.posts %}
- {% if post.categories contains 'MailStoreSPE' %}
+ {% if post.categories contains 'MailStoreGateway' %}
       <li><a href="{{ post.url }}">{{ post.title }}</a></li>
       {% if post.tags != empty %}
       <h6>Tags: {{ post.tags | array_to_sentence_string }}</h6>
@@ -27,7 +27,7 @@ toplink: left
 <ul>
 {% for post in posts %}
   {% if post.tags contains t %}
-  {% if post.categories contains 'MailStoreSPE' %}
+  {% if post.categories contains 'MailStoreGateway' %}
   <li><a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endif %}
   {% endif %}

@@ -1,6 +1,6 @@
 ---
 permalink: /mailstorehome/
-title: MailStore Home
+title: Home
 toplink: left
 ---
 <h2>MailStore Home</h2>
