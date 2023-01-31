@@ -22,7 +22,8 @@ toplink: left
 {% endfor %}
 {% for post in site.posts %}
 {% if post.categories != empty %}
-{% if post.categories != HelperArticles %}
+{% if post.categories contains "HelperArticles" %}
+{% else %}
     <p><h2>
       <a href="{{ post.url }}">
         {{ post.title }}
