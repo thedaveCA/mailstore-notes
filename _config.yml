@@ -1,5 +1,5 @@
 title: A bit about MailStore
-description: 
+description: Server, SPE, Home, Gateway
 permalink: /:categories/:title/ # date/pretty/ordinal/weekdate/none https://jekyllrb.com/docs/permalinks/
 show_downloads: false
 repository: thedaveCA/mailstore-notes
