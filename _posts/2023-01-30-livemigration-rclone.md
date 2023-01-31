@@ -1,6 +1,6 @@
 ---
 title: Migrating a "live" MailStore Server using rclone
-categories: MailStoreServer
+categories: HelperArticles
 tags: importing tips
 published: true
 permalink: mailstoreserver/livemigration/rclone/

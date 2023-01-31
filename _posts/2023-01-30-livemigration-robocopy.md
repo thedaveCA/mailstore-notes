@@ -1,6 +1,6 @@
 ---
 title: Migrating a "live" MailStore Server using robocopy
-categories: MailStoreServer
+categories: HelperArticles
 tags: importing tips
 published: true
 permalink: mailstoreserver/livemigration/robocopy/
