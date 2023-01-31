@@ -48,4 +48,4 @@ You can do this in multiple ways, I'll cover robocopy and rclone, but any file c
 
 The important part is that you do not block MailStore from accessing the database files, and avoid copying files that are still changing. In particular, do not copy or touch the `.FDB` files while MailStore is running.
 
-Follow either the [robocopy instructions](livemigration-robocopy) or the [rclone instructions](livemigration-rclone).
+Follow either the [robocopy instructions](2023-01-30-livemigration-robocopy.md) or the [rclone instructions](2023-01-30-livemigration-rclone.md).
