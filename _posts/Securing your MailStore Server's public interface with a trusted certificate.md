@@ -1,9 +1,9 @@
 ---
-title: Securing your MailStore Server's public interface with a trusted certificate
+title: An quick review of TLS certificate options
 categories: MailStoreServer
 tags: 
 published: false
---- 
+---
 1. MailStore can generate a self-signed certificate, this is the quickest and easiest to get up and running, but of course results in certificate errors.
 
 2. You can deploy the certificate itself to client machines so that clients can connections to MailStore Server. There is no root certificate used, the certificate is entirely self-signed.
