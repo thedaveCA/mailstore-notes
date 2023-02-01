@@ -1,5 +1,5 @@
 ---
-title: Explain MailStore's folder structure
+title: Explaining MailStore's folder structure
 categories: MailStoreServer MailStoreSPE MailStoreHome
 tags: information
 published: true
