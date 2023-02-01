@@ -3,7 +3,7 @@ permalink: /mailstoregateway/
 title: Gateway
 toplink: left
 ---
-<h2>MailStore SPE</h2>
+<h2>MailStore Gateway</h2>
 <h3>All articles</h3>
 <ul>
 {% for post in site.posts %}
